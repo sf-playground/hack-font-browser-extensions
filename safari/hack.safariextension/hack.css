@@ -5,4 +5,5 @@
 
 pre, code, kbd, samp, tt {
   font-family: 'Hack-webfont', monospace !important;
+  font-size: .85em;
 }
