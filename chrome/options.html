@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hack webfont options</title>
+  <style>
+    body {
+      font-size: .8em;
+    }
+    p {
+      margin: 0 0 .5em;
+    }
+    label {
+      display: block;
+      padding: .2em 0;
+    }
+    form #buttons {
+      margin-top: 1.5em;
+    }
+    #status {
+      margin-left: 1em;
+      color: #090;
+    }
+    footer {
+      margin: 0 -1.7em 0 -1.7em;
+      position: relative;
+      top: 2em;
+      padding: .5em 1em;
+      font-size: .8em;
+      font-family: Hack, monospace;
+      color: #999;
+      background: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Enable Hack font for:</p>
+
+  <form>
+    <label>
+      <input type="checkbox" id="enable-pre">
+      Preformatted source <tt>&lt;pre&gt;</tt>
+    </label>
+    <label>
+      <input type="checkbox" id="enable-code">
+      Source code <tt>&lt;code&gt;</tt>
+    </label>
+    <label>
+      <input type="checkbox" id="enable-kbd">
+      Keyboard typings <tt>&lt;kbd&gt;</tt>
+    </label>
+    <label>
+      <input type="checkbox" id="enable-samp">
+      Samples <tt>&lt;samp&gt;</tt>
+    </label>
+    <label>
+      <input type="checkbox" id="enable-tt">
+      Teletyper <tt>&lt;tt&gt;</tt>
+    </label>
+    <label>
+      <input type="checkbox" id="enable-textarea">
+      Form text areas <tt>&lt;textarea&gt;</tt>
+    </label>
+    <div id="buttons">
+      <button id="save">Save</button>
+      <span id="status"></span>
+    </div>
+  </form>
+
+  <footer>
+    Created by the <a href="http://sourcefoundry.org/hack/">Source Foundry</a>.
+    Hack is <a href="https://github.com/chrissimpkins/Hack/blob/master/LICENSE.md">licensed</a>
+    under the Hack Open Font License v2.0 and the Bitstream Vera License.
+  </footer>
+
+  <script src="options.js"></script>
+</body>
+</html>

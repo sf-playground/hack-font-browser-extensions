@@ -1,12 +1,21 @@
 {
-	"manifest_version": 2,
-	"name": "Use Hack font for monospace elements",
-	"version": "1.0.0",
-	"author": "Source Foundry",
-	"content_scripts": [
-		{
-			"matches": ["http://*/*", "https://*/*"],
-			"css": ["hack.css"]
-		}
-	]
+  "manifest_version": 2,
+  "name": "Use Hack font for monospace elements",
+  "version": "1.0.0",
+  "author": "Source Foundry",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["hack.css"],
+      "js": ["hack.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
 }
