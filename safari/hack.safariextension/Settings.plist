@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>enable-pre</string>
+		<key>Title</key>
+		<string>Enable for preformatted source &lt;pre&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>enable-code</string>
+		<key>Title</key>
+		<string>Enable for source code &lt;code&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>enable-kbd</string>
+		<key>Title</key>
+		<string>Enable for keyboard typings &lt;kbd&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>enable-samp</string>
+		<key>Title</key>
+		<string>Enable for samples &lt;samp&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>enable-tt</string>
+		<key>Title</key>
+		<string>Enable for teletyper &lt;tt&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>false</string>
+		<key>Key</key>
+		<string>enable-textarea</string>
+		<key>Title</key>
+		<string>Enable for form text areas &lt;textarea&gt;</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>version</string>
+	</dict>
+</array>
+</plist>

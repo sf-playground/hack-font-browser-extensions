@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+    <script>
+      var respondToMessage = function (e) {
+          if (e.name !== 'hack-font-browser-extensions-getsettings') {
+            return;
+          }
+
+          var values = JSON.parse(e.message), i;
+
+          // setup
+          if (safari.extension.settings.getItem('version') === '1.0.00') {
+            // load settings
+            for (i in values) {
+              values[i] = safari.extension.settings.getItem(i);
+            }
+          } else {
+            // set defaults
+            for (i in values) {
+              safari.extension.settings[i] = values[i];
+            }
+            safari.extension.settings.version = '1.0.00';
+          }
+
+          // return values to injected script
+          safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(
+            'hack-font-browser-extensions-getsettings',
+            JSON.stringify(values)
+          );
+      };
+      safari.application.addEventListener('message', respondToMessage, false);
+    </script>
+  </body>
+</html>
