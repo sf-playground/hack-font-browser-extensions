@@ -1,11 +1,11 @@
 {
 	"manifest_version": 2,
 	"name": "Use Hack font for monospace elements",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"author": "Source Foundry",
 	"applications": {
 		"gecko": {
-			"id": "hack-font-browser-extensions@sourcefoundry.org"
+			"id": "hack-font-browser-extensions-beta@sourcefoundry.org"
 		}
 	},
 	"content_scripts": [
